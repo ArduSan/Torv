@@ -1,0 +1,26 @@
+a=12
+2	f=34
+3	
+4	def k(x):
+5	    global a
+6	    a=x
+7	    P(f)
+8	    print f
+9	    
+10	def P(l):
+11	    if a>f:
+12	        global f
+13	        f=a
+14	    print l
+15	    
+16	def start(x,l):
+17	    k(x)
+18	    print a+f
+19	    def L():
+20	        a=0
+21	        print l
+22	    P(l)
+23	    print f
+24	    print l
+25	    
+26	start(5,7)

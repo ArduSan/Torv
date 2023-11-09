@@ -1,0 +1,13 @@
+float abs(Fcomplex, imm);
+Fcomplex_sum(Fcomplex_n1,Fcomplex_n2);
+Fcomplex_prod(Fcomplex_n1,Fcomplex_n2);
+Fcomplex_con(Fcomplex);
+Fcomplex_Div(Fcomplex_n1,Fcomplex_n2);
+Fcomplex_Diff(Fcomplex_n1,Fcomplex_n2);
+
+
+Float_Real(Fcomplex);
+Float_Im(Fcomplex);
+Fcomplex_Build(float R,float I)
+Fcomplex_Vct(float R);
+

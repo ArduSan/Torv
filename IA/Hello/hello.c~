@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include "mcd.h"
+
+int main(int argc, char **argv){
+	int times;
+	int tuma;
+	tuma = 123;
+        times = 100;
+	{
+		//all'interno del blocco posso assegnare di nuovo le variabili
+		int i,times; //questa variabile vive solo all'interno di questo blocco		
+		i=10;
+		times=20;
+		printf("inside block i= %d!\n times= %d!\n",i,times);
+	}
+	printf("hello World %d times! %d \n",times,tuma );
+	massimo(12,24);
+	return (0);
+}
