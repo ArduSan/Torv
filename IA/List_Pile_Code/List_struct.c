@@ -20,6 +20,9 @@ typedef struct list{
 	
 }List;
 
+//sono un burlone
+
+
 bool empty(List *myList){
 	return (myList->head)==NULL;
 	
