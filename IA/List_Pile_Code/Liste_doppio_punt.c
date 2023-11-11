@@ -112,7 +112,7 @@ int main() {
     l->head = a;
     l->tail = d;
 
-
+    insert(a,4,l);
     printList(l->head);
     printListR(l->tail);
 
