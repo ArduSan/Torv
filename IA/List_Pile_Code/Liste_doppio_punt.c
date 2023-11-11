@@ -35,9 +35,6 @@ bool empty(List *l){
 
 Node *insert(Node *pos,int item,List *l ){
     Node *new = malloc(sizeof(Node));
-    if (pos ==NULL){
-        return NULL;
-    }
 
     if (empty(l)){
         return NULL;
@@ -46,10 +43,10 @@ Node *insert(Node *pos,int item,List *l ){
 
         }
         new->item = item;
-        new->prev = pos->next;
-        new->next = pos->next->prev;
-        pos->next = new->prev;
-        pos->next->prev= new ->next;
+        new->next = pos->next;
+        new->prev = pos;
+        pos->next = new;
+        new->next->prev= new;
 
     }
     return new;
@@ -118,6 +115,8 @@ int main() {
 
     printList(l->head);
     printListR(l->tail);
+
+
 }
 
 
