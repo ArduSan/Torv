@@ -48,6 +48,8 @@ Node *insert(Node *pos,int item,List *l ){
         new->item = item;
         new->prev = pos->next;
         new->next = pos->next->prev;
+        pos->next = new->prev;
+        pos->next->prev= new ->next;
 
     }
     return new;
