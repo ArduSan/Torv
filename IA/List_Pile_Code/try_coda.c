@@ -43,4 +43,3 @@ Node *next(Node *mynode){
 	}
 }
 
-Node *prev(
