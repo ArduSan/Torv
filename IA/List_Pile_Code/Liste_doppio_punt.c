@@ -62,8 +62,8 @@ void *rem(List *l,Node *pos){
         pos -> next = pos -> prev;
 
     }
-
 }
+
 void printList(Node *head) {
     Node *p = head;
     printf("LIST: ");
