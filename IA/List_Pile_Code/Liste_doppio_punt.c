@@ -52,7 +52,18 @@ Node *insert(Node *pos,int item,List *l ){
     return new;
 
 }
+void *rem(List *l,Node *pos){
+    if ( (pos->prev == NULL)&&(pos->next != NULL)){
+        l->head = pos -> next;
+    }else if((pos->prev != NULL)&&(pos->next == NULL)){
+        l->tail = pos -> prev;
+    }else{
+        pos->prev = pos -> next;
+        pos -> next = pos -> prev;
 
+    }
+
+}
 void printList(Node *head) {
     Node *p = head;
     printf("LIST: ");
@@ -112,10 +123,10 @@ int main() {
     l->head = a;
     l->tail = d;
 
-
+    rem(l,a);
+    rem(l,d);
     printList(l->head);
     printListR(l->tail);
-
 
 }
 
