@@ -29,6 +29,7 @@ List buildList() {
     List l = {&a,&d};
     return l;
 }*/
+
 bool empty(List *l){
     return ((l->head == NULL)&&(l->tail==NULL));
 }
@@ -123,13 +124,13 @@ int main() {
     l->head = a;
     l->tail = d;
 
-    rem(l,a);
-    rem(l,d);
+  //  rem(l,a);
+  //  rem(l,d);
+	
     printList(l->head);
     printListR(l->tail);
 
 }
-
 
 
 
