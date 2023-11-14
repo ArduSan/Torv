@@ -65,6 +65,24 @@ void *rem(List *l,Node *pos){
     }
 }
 
+Node find(List *l,int value){
+	Node *current =  malloc(sizeof(Node));
+	if (empty(l)){
+		return *current;
+	}else{
+		current = l -> head;
+		while(current!= NULL){
+			if (current->item == value){
+				return *current;
+			}
+			current = current->next;
+		}
+		printf ("item not found");
+		return *current;
+	}
+
+}
+
 void printList(Node *head) {
     Node *p = head;
     printf("LIST: ");
